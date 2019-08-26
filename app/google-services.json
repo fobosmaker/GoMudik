@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "453582071341",
+    "firebase_url": "https://gomudik-22515.firebaseio.com",
+    "project_id": "gomudik-22515",
+    "storage_bucket": "gomudik-22515.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:453582071341:android:ec0d4656833532d0",
+        "android_client_info": {
+          "package_name": "id.cnn.gomudik"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "453582071341-krp47i7tqoelru2vj6po8q430k7duv1k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.cnn.gomudik",
+            "certificate_hash": "3a389f535ffaf404062502def7f79969d6b06430"
+          }
+        },
+        {
+          "client_id": "453582071341-jl273kni9rbeomvlmqfnml8oumh5ejpl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRmuoFOdwtQ-6Kl4RT4wwTPiyZJg5-2K4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "453582071341-jl273kni9rbeomvlmqfnml8oumh5ejpl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

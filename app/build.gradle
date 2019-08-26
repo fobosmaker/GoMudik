@@ -1,0 +1,75 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "id.cnn.gomudik"
+        minSdkVersion 19
+        targetSdkVersion 26
+//Production
+        versionCode 11
+        versionName "1.0.6"
+//Development
+//        versionCode 1
+//        versionName "1.0.0.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+}
+
+repositories {
+    mavenCentral()
+    google()
+    jcenter()
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:support-v4:26.1.0'
+    implementation 'android.arch.lifecycle:extensions:1.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.google.firebase:firebase-core:16.0.9' //firebase
+    implementation 'com.google.firebase:firebase-database:17.0.0'
+    implementation 'com.google.firebase:firebase-messaging:18.0.0'
+    implementation 'com.google.firebase:firebase-iid:18.0.0'
+    implementation 'com.google.firebase:firebase-auth:17.0.0'
+    implementation 'com.felipecsl:gifimageview:2.1.0' //for playing GIF animation in Splash
+    implementation 'commons-io:commons-io:2.4'
+    implementation 'com.android.support:cardview-v7:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+    implementation "com.google.android.gms:play-services-maps:16.1.0"
+    implementation "com.google.android.gms:play-services-location:16.0.0"
+    //implementation "com.google.android.gms:play-services-measurement-base:16.5.0"
+    implementation group: 'com.github.msarhan', name: 'ummalqura-calendar', version: '1.1.9' //Ummalqura-Calendar(Arabic Calendar)
+    implementation 'com.google.android.exoplayer:exoplayer:2.7.3' //ExoPlayer
+    implementation 'com.google.android.exoplayer:extension-rtmp:2.7.3' //ExoPlayer
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0' //Retrofit
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0' //Retrofit
+    implementation 'com.squareup.picasso:picasso:2.71828' //Picasso
+    implementation 'com.borjabravo:readmoretextview:2.0.1' //Readmore TextView
+    implementation 'com.thoughtbot:expandablerecyclerview:1.3' //Expandable RecycleView
+    implementation 'de.hdodenhof:circleimageview:2.2.0' //CircleImageView
+    implementation 'com.daasuu:BubbleLayout:1.2.0' //BubbleChat
+    implementation 'com.android.support:support-annotations:28.0.0'
+    implementation 'org.jetbrains:annotations-java5:15.0'
+    implementation 'com.code-troopers.betterpickers:library:3.1.0' //calendar
+    implementation 'com.github.barteksc:android-pdf-viewer:2.3.0'//pdf viewer
+    implementation 'org.apache.commons:commons-io:1.3.2'
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+}
+apply plugin: 'com.google.gms.google-services'

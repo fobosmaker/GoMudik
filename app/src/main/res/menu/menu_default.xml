@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_chat"
+        android:title="Notif"
+        android:icon="@drawable/ic_chat_bubble"
+        android:visible="false"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/action_notif"
+        android:title="Notif"
+        android:visible="false"
+        android:icon="@drawable/ic_notifications"
+        app:showAsAction="ifRoom"
+        />
+    <!--<item
+        android:id="@+id/action_chat"
+        android:title="@string/Chat"
+        android:icon="@drawable/ic_chat_bubble"
+        app:showAsAction="ifRoom"
+        app:actionLayout="@layout/badge_chat"
+        />
+    <item
+        android:id="@+id/action_notif"
+        android:title="Notifications"
+        android:icon="@drawable/ic_notifications"
+        app:showAsAction="ifRoom"
+        app:actionLayout="@layout/badge_notification"
+        />-->
+    <item
+        android:id="@+id/action_profile"
+        android:title="Profile" />
+    <item
+        android:id="@+id/action_friends"
+        android:title="Friends" />
+    <item
+        android:id="@+id/action_help"
+        android:title="Help" />
+    <item
+        android:id="@+id/action_logout"
+        android:title="Log out" />
+</menu>

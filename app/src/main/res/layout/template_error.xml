@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/template_error"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ImageView
+        android:id="@+id/imageError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_error_outline_red_75dp"
+        android:padding="5dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        tools:ignore="ContentDescription"/>
+    <TextView
+        android:id="@+id/messageError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageError"
+        android:textColor="@color/black"
+        android:singleLine="true"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:layout_marginBottom="5dp"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="Error loading"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:textColor="@color/colorPrimary"
+        android:text="Error to get data, pull to refresh to try again"
+        android:layout_below="@+id/messageError"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorPrimaryDark">
+    <include layout="@layout/app_bar_default"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightBlack"
+        android:layout_below="@id/appbar">
+        <include layout="@layout/ads_top"/>
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/exoPlayer"
+            android:layout_above="@+id/bottomAds"
+            android:layout_below="@id/topAds">
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:visibility="visible"
+                tools:visibility="visible"
+                android:layout_gravity="center"/>
+        </com.google.android.exoplayer2.ui.PlayerView>
+        <include layout="@layout/ads_bottom"/>
+    </RelativeLayout>
+</RelativeLayout>

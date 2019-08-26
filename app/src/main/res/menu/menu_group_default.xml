@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="id.cnn.gomudik.gomudik_user_and_group_package.activity.group_chat.GomudikGroupActivity">
+    <item
+        android:id="@+id/action_edit"
+        android:title="Edit Group" />
+    <item
+        android:id="@+id/action_leave"
+        android:title="Leave Group" />
+</menu>

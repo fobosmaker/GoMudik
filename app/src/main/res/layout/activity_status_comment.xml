@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gomudik_main_package.activity.StatusCommentActivity">
+    <include layout="@layout/app_bar_default"/>
+    <include layout="@layout/content_status_comment" />
+    <RelativeLayout
+        android:id="@+id/cage_chat_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        tools:ignore="MissingConstraints">
+        <RelativeLayout
+            android:id="@+id/chat_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark">
+            <ImageButton
+                android:id="@+id/send_button"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/ic_send_grey_24dp"
+                android:background="?attr/selectableItemBackground"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                tools:ignore="contentDescription" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/white_border"
+                android:id="@+id/relLayout1"
+                android:layout_toStartOf="@id/send_button">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:id="@+id/input_chat"
+                    android:background="@null"
+                    android:hint="Type comment here..."
+                    android:inputType="textMultiLine"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"/>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

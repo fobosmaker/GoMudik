@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gomudik_main_package.activity.CCTVActivity">
+    <include layout="@layout/app_bar_default"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appbar">
+        <include layout="@layout/ads_top"/>
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/topAds"
+            android:layout_above="@+id/bottomAds">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout android:id="@+id/cage_form_cctv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_below="@+id/topAds">
+                    <TextView android:id="@+id/cctvTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Location: "
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="17sp"
+                        android:textColor="@color/black"/>
+                    <EditText
+                        android:id="@+id/cctv_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:padding="5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/cctvTitle"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_toStartOf="@id/button_select"/>
+                    <Button
+                        android:id="@+id/button_select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:padding="5dp"
+                        android:text="Select" />
+                </RelativeLayout>
+                <ImageView
+                    android:id="@+id/image_cctv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cage_form_cctv"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ex_thumbnail"
+                    android:padding="10dp"/>
+                <TextView
+                    android:id="@+id/cctv_source"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/image_cctv"
+                    android:text="Source: "
+                    android:textColor="@color/black"
+                    android:layout_alignParentEnd="true"
+                    android:paddingEnd="10dp"/>
+            </RelativeLayout>
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <include layout="@layout/ads_bottom"/>
+    </RelativeLayout>
+</RelativeLayout>
